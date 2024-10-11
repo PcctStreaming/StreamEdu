@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Teste</title>
+
+    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container-fluid">
+        
+        <header class="p-3 mb-3 border-bottom">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+                    <div class="col-12 col-lg-auto me-lg-auto mb-md-0">
+                        <h2>Blog Teste</h2>
+                    </div>
+    
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                        <input type="search" class="form-control" placeholder="Pesquisar" aria-label="Search">
+                    </form>
+            
+                    <div class="dropdown text-end">
+                        <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu text-small">
+                            <li><a class="dropdown-item" href="#">Perfil</a></li>
+                            <li><a class="dropdown-item" href="#">Configurações</a></li>
+                            <li><a class="dropdown-item" href="#">Ajuda</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Sair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="container-fluid d-flex flex-column p-0">
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <video 
+                            class="video-js mx-2 mb-3 vjs-layout-large vjs-16-9 rounded-3" 
+                            controls preload="none" 
+                            data-setup='{ "playbackRates": [1, 1.5, 2] }'
+                            >
+                            <source src="assets/video.mp4" type='video/mp4' />           
+                        </video>
+
+                        <div class="border rounded px-5 ms-2">
+                            <h3 class="mt-3 mb-2 fw-bold">Titulo do video experimeital</h3>
+
+                            <div class="d-flex justify-content-between p-0">
+
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="fs-5 fw-bold text-decoration-underline">Prof. Fernando</span>
+                                </div>
+
+                                <div class="d-flex gap-2 justify-content-md-end mb-3 p-0">
+                                    <a type="button" class="btn border d-flex align-items-center gap-2" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        Favoritar
+                                    </a>
+                                    
+                                    <a type="button" class="btn border d-flex align-items-center gap-2" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                                            <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"/>
+                                        </svg>
+                                        Compartilhar
+                                    </a>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+
+                        <div class="border rounded my-3 px-5 ms-2">
+                            
+                            <h4 class="my-3">Descrição do video</h4>
+                            
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Vero, sint cupiditate ducimus incidunt architecto, harum quae sequi cum repellendus nesciunt illum explicabo. 
+                                Repellat temporibus vitae ad distinctio, consequuntur voluptates. Excepturi.
+                            </p>
+                        </div>
+
+                        <div class="border rounded my-3 px-5 ms-2" style="height: 1000px;">
+
+                            <form>
+                                <div class="d-flex flex-column gap-3">
+
+                                    <div class="input-group mt-3">
+                                        <span class="input-group-text">Anotações</span>
+                                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                                    </div>
+                                    
+                                    <div class="d-grid justify-content-md-end">
+                                        <button type="submit" class="btn btn-success" style="width: 150px;">
+                                            Salvar anotação
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <H4 class="mt-3">Anotações realizadas</H4>
+
+                            <div class="mt-3">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                                      <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">List group item heading</h5>
+                                        <small>3 days ago</small>
+                                      </div>
+                                      <p class="mb-1">Some placeholder content in a paragraph.</p>
+                                      <small>And some small print.</small>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                      <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">List group item heading</h5>
+                                        <small class="text-body-secondary">3 days ago</small>
+                                      </div>
+                                      <p class="mb-1">Some placeholder content in a paragraph.</p>
+                                      <small class="text-body-secondary">And some muted small print.</small>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                      <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">List group item heading</h5>
+                                        <small class="text-body-secondary">3 days ago</small>
+                                      </div>
+                                      <p class="mb-1">Some placeholder content in a paragraph.</p>
+                                      <small class="text-body-secondary">And some muted small print.</small>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-4">
+
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="assets/img.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body d-flex flex-column justify-content-between" style=" height: 160px;">
+                                    <h5 class="card-title">Programação Web - Front-end - Parte 1</h5>
+                                    <span>Prof. Fernando</span>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">
+                                            Last updated 3 mins ago
+                                        </small>
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="assets/img.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body d-flex flex-column justify-content-between" style=" height: 160px;">
+                                    <h5 class="card-title">Programação Web - Front-end - Parte 1</h5>
+                                    <span>Prof. Fernando</span>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">
+                                            Last updated 3 mins ago
+                                        </small>
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="assets/img.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body d-flex flex-column justify-content-between" style=" height: 160px;">
+                                    <h5 class="card-title">Programação Web - Front-end - Parte 1</h5>
+                                    <span>Prof. Fernando</span>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">
+                                            Last updated 3 mins ago
+                                        </small>
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="assets/img.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body d-flex flex-column justify-content-between" style=" height: 160px;">
+                                    <h5 class="card-title">Programação Web - Front-end - Parte 1</h5>
+                                    <span>Prof. Fernando</span>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">
+                                            Last updated 3 mins ago
+                                        </small>
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="assets/img.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body d-flex flex-column justify-content-between" style=" height: 160px;">
+                                    <h5 class="card-title">Programação Web - Front-end - Parte 1</h5>
+                                    <span>Prof. Fernando</span>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">
+                                            Last updated 3 mins ago
+                                        </small>
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="assets/img.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body d-flex flex-column justify-content-between" style=" height: 160px;">
+                                    <h5 class="card-title">Programação Web - Front-end - Parte 1</h5>
+                                    <span>Prof. Fernando</span>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">
+                                            Last updated 3 mins ago
+                                        </small>
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="assets/img.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body d-flex flex-column justify-content-between" style=" height: 160px;">
+                                    <h5 class="card-title">Programação Web - Front-end - Parte 1</h5>
+                                    <span>Prof. Fernando</span>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">
+                                            Last updated 3 mins ago
+                                        </small>
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="assets/img.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body d-flex flex-column justify-content-between" style=" height: 160px;">
+                                    <h5 class="card-title">Programação Web - Front-end - Parte 1</h5>
+                                    <span>Prof. Fernando</span>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">
+                                            Last updated 3 mins ago
+                                        </small>
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="assets/img.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body d-flex flex-column justify-content-between" style=" height: 160px;">
+                                    <h5 class="card-title">Programação Web - Front-end - Parte 1</h5>
+                                    <span>Prof. Fernando</span>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">
+                                            Last updated 3 mins ago
+                                        </small>
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="assets/img.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body d-flex flex-column justify-content-between" style=" height: 160px;">
+                                    <h5 class="card-title">Programação Web - Front-end - Parte 1</h5>
+                                    <span>Prof. Fernando</span>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">
+                                            Last updated 3 mins ago
+                                        </small>
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <script src="https://player.vimeo.com/api/player.js"></script>
+
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
