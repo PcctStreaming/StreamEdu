@@ -18,9 +18,9 @@
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 
                     <div class="col-12 col-lg-auto me-lg-auto mb-md-0 d-flex align-items-center">
-                        <h2>Blog Teste</h2>
+                        <h2>StreamEdu</h2>
                         <h4 class="ms-3">|</h4>
-                        <h4 class="ms-3">Programação Web</h4>
+                        <h4 class="ms-3">HTML e CSS</h4>
                     </div>
     
                     <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
@@ -49,18 +49,22 @@
                 <video 
                     class="video-js mx-2 mb-3 vjs-layout-large vjs-16-9 rounded-3" 
                     controls preload="none" 
-                    data-setup='{ "playbackRates": [1, 1.5, 2] }'
+                    data-setup='{ 
+                        "playbackRates": [1, 1.5, 2], 
+                        "techOrder": ["youtube", "html5"], 
+                        "sources": [{ "type": "video/youtube", 
+                        "src": "https://youtu.be/E6CdIawPTh0?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n"}] }'
                     >
-                    <source src="assets/video.mp4" type='video/mp4' />           
+        
                 </video>
 
                 <div class="border rounded px-5 ms-2 w-100">
-                    <h3 class="mt-3 mb-2 fw-bold">Titulo do video experimeital</h3>
+                    <h3 class="mt-3 mb-2 fw-bold">Introdução ao HTML</h3>
 
                     <div class="d-flex justify-content-between p-0">
 
                         <div class="d-flex align-items-center mb-3">
-                            <span class="fs-5 fw-bold text-decoration-underline">Prof. Fernando</span>
+                            <span class="fs-5 fw-bold text-decoration-underline">Prof. Guanabara</span>
                         </div>
 
                         <div class="d-flex gap-2 justify-content-md-end mb-3 p-0">
@@ -86,9 +90,26 @@
                     <h4 class="my-3">Descrição do video</h4>
                     
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Vero, sint cupiditate ducimus incidunt architecto, harum quae sequi cum repellendus nesciunt illum explicabo. 
-                        Repellat temporibus vitae ad distinctio, consequuntur voluptates. Excepturi.
+                        O Curso de HTML5 e CSS3 vai ensinar a criar sites usando a linguagem de marcação hipertexto (HTML) e  folhas de estilo em cascata (CSS), todas em suas versões mais recentes. Neste curso, o Professor Gustavo Guanabara criou um conjunto de vídeos, exercícios, desafios e um material de apoio em forma de e-book com 30 capítulos ao todo. 
+                        <br>
+                        <br>
+                        Se prepare pois esse é o seu passo inicial rumo à sua independência profissional <br>
+                        <br>
+                        <strong>O que você aprenderá</strong>
+                            <br>
+                            <li>dominar as tags básicas de html</li>
+                            <li>entender quais os pontos mais usados do html em outras tecnologias</li>
+                            <li>facilitar correções html em clientes freelancer</li>
+                            <li>depurar código fonte</li>
+                            <br>
+                        <strong>Há algum requisito ou pré-requisito para o curso</strong>? <br>
+                            <br>
+                            <li>Não é necessário ter experiência anterior em programação</li>
+                            <br>
+                        <strong>Para quem é este curso:</strong> <br>
+                        <br>
+                            <li>Iniciantes na área de desenvolvimento web</li>
+                            <li>Pessoas que querem trabalhar freelancer na área de programação</li>
                     </p>
                 </div>
 
@@ -116,27 +137,17 @@
                         <div class="list-group">
                             <a href="#" class="list-group-item list-group-item-action" aria-current="true">
                                 <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">List group item heading</h5>
-                                <small>3 days ago</small>
+                                <h5 class="mb-1">Tag BODY</h5>
+                                <small>03 dias atrás</small>
                                 </div>
-                                <p class="mb-1">Some placeholder content in a paragraph.</p>
-                                <small>And some small print.</small>
+                                <p class="mb-1">Tag que define todo o corpo utilizavel da pagina.</p>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">List group item heading</h5>
-                                <small class="text-body-secondary">3 days ago</small>
+                                <h5 class="mb-1">Link:css</h5>
+                                <small class="text-body-secondary">03 dias atrás</small>
                                 </div>
-                                <p class="mb-1">Some placeholder content in a paragraph.</p>
-                                <small class="text-body-secondary">And some muted small print.</small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">List group item heading</h5>
-                                <small class="text-body-secondary">3 days ago</small>
-                                </div>
-                                <p class="mb-1">Some placeholder content in a paragraph.</p>
-                                <small class="text-body-secondary">And some muted small print.</small>
+                                <p class="mb-1">Tag utilizada para conectar o arquivo CSS</p>
                             </a>
                         </div>
                     </div>
@@ -150,10 +161,9 @@
                 <div id="card-hover" class="card mb-3" onclick="">
                     <div class="row g-0">
                         <div class="col">
-                            <div class="card-body d-flex flex-column justify-content-between" style=" height: 150px;">
-                                <h5 class="card-title"><a href="" class="text-decoration-none text-body">Programação Web - Front-end - Parte 1</a></h5>
-                                <span>Prof. Fernando</span>
-                                
+                            <div class="card-body d-flex flex-column justify-content-between" style=" height: 100px;">
+                                <h5 class="card-title"><a href="" class="text-decoration-none text-body">Introdução ao CSS</a></h5>
+                                <span>Prof. Guanabara</span>
                             </div>
                         </div>
                     </div>
@@ -162,14 +172,9 @@
                 <div id="card-hover" class="card mb-3" onclick="">
                     <div class="row g-0">
                         <div class="col">
-                            <div class="card-body d-flex flex-column justify-content-between" style=" height: 150px;">
-                                <h5 class="card-title"><a href="" class="text-decoration-none text-body">Programação Web - Front-end - Parte 1</a></h5>
-                                <span>Prof. Fernando</span>
-                                <p class="card-text">
-                                    <small class="text-body-secondary">
-                                        Last updated 3 mins ago
-                                    </small>
-                                </p>
+                            <div class="card-body d-flex flex-column justify-content-between" style=" height: 100px;">
+                                <h5 class="card-title"><a href="" class="text-decoration-none text-body">CSS Conceitos - Box Model</a></h5>
+                                <span>Prof. Guanabara</span>
                             </div>
                         </div>
                     </div>
@@ -178,14 +183,9 @@
                 <div id="card-hover" class="card mb-3" onclick="">
                     <div class="row g-0">
                         <div class="col">
-                            <div class="card-body d-flex flex-column justify-content-between" style=" height: 150px;">
-                                <h5 class="card-title"><a href="" class="text-decoration-none text-body">Programação Web - Front-end - Parte 1</a></h5>
-                                <span>Prof. Fernando</span>
-                                <p class="card-text">
-                                    <small class="text-body-secondary">
-                                        Last updated 3 mins ago
-                                    </small>
-                                </p>
+                            <div class="card-body d-flex flex-column justify-content-between" style=" height: 100px;">
+                                <h5 class="card-title"><a href="" class="text-decoration-none text-body">Configurando o VSCode</a></h5>
+                                <span>Prof. Guanabara</span>
                             </div>
                         </div>
                     </div>
@@ -194,14 +194,31 @@
                 <div id="card-hover" class="card mb-3" onclick="">
                     <div class="row g-0">
                         <div class="col">
-                            <div class="card-body d-flex flex-column justify-content-between" style=" height: 150px;">
-                                <h5 class="card-title"><a href="" class="text-decoration-none text-body">Programação Web - Front-end - Parte 1</a></h5>
-                                <span>Prof. Fernando</span>
-                                <p class="card-text">
-                                    <small class="text-body-secondary">
-                                        Last updated 3 mins ago
-                                    </small>
-                                </p>
+                            <div class="card-body d-flex flex-column justify-content-between" style=" height: 100px;">
+                                <h5 class="card-title"><a href="" class="text-decoration-none text-body">Iniciando projeto e o HTML</a></h5>
+                                <span>Prof. Guanabara</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="card-hover" class="card mb-3" onclick="">
+                    <div class="row g-0">
+                        <div class="col">
+                            <div class="card-body d-flex flex-column justify-content-between" style=" height: 100px;">
+                                <h5 class="card-title"><a href="" class="text-decoration-none text-body">Adicionando arquivo CSS</a></h5>
+                                <span>Prof. Guanabara</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="card-hover" class="card mb-3" onclick="">
+                    <div class="row g-0">
+                        <div class="col">
+                            <div class="card-body d-flex flex-column justify-content-between" style=" height: 100px;">
+                                <h5 class="card-title"><a href="" class="text-decoration-none text-body">Quiz</a></h5>
+                                <span>05 Questões</span>
                             </div>
                         </div>
                     </div>
@@ -213,7 +230,9 @@
 
     </div>
 
-    <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+    <script src="../dist/video.js"></script>
+    <script src="../dist/Youtube.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
